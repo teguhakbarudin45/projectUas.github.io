@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Foods!</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <!-- Navbar -->
+   <div class="navbar">
+      <nav>
+         <div class="navbar-center">
+            <!-- Navbar Header -->
+            <div class="navbar-header">
+               <a class="name-logo" href="#home">Foods!</a>
+            </div>
+            <!-- Links -->
+            <ul class="links">
+               <li class="active-links"><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#menu">Menu</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Cart and Menu Button -->
+            <div class="navbar-icons">
+               <div class="cart-shopping">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <div class="quantity">0</div>
+               </div>
+               <button class="btn-menu">
+                  <div class="hamburger-btn">
+                     <i class="fa-solid fa-bars"></i>
+                  </div>
+                  <div class="close-btn">
+                     <i class="fa-solid fa-xmark"></i>
+                  </div>
+               </button>
+            </div>
+         </div>
+      </nav>
+
+      <!-- Aside cart -->
+      <div class="cart">
+         <h3>Your Cart</h3>
+         <ul class="productList"></ul>
+         <div class="checkout-container">
+            <div class="checkout">Checkout</div>
+            <div class="close">Close</div>
+         </div>
+         <div class="total-price">
+            <div class="subtotal"></div>
+            <div class="diskon"></div>
+            <div class="total"></div>
+         </div>
+
+         <form class="form-checkout">
+            <div>
+               <label>Username</label>
+               <input type="text" name="username" id="usernamee" placeholder="Your username" required>
+            </div>
+            <div>
+               <label>Email</label>
+               <input type="email" name="email" id="emaill" placeholder="Your email" required>
+            </div>
+            <div>
+               <label>Phone</label>
+               <input type="number" name="phone" id="phone" placeholder="Your phone" required>
+            </div>
+            <div>
+               <label>addres</label>
+               <textarea name="addres" id="addres" placeholder="address"></textarea>
+            </div>
+            <button class="btn-checkout">Pesan Sekarang</button>
+         </form>
+      </div>
+   </div>
+   <!-- Navbar end -->
+
+   <!-- Header -->
+   <main class="hero-section" id="home">
+      <div class="title-header">
+         <h1 class="title">Selamat Datang di <span>Foods!</span>
+            Temukan Keajaiban Rasa di Setiap Sajian
+         </h1>
+         <div class="deskripsi">
+            Nikmati hidangan lezat yang dibuat dengan bahan-bahan segar dan penuh cinta. Dari hidangan pembuka hingga
+            penutup, kami menghadirkan kelezatan tanpa batas
+         </div>
+         <button class="btn btn-explore">
+            <a href="#menu">Explore Menu</a>
+         </button>
+      </div>
+   </main>
+   <!-- Header end -->
+
+   <!-- About -->
+   <section class="about-container" id="about">
+      <h1 class="heading">About</h1>
+      <div class="about-content">
+         <div class="deskripsi">
+            Selamat datang di <span>Foods!</span>, tempat di mana keajaiban rasa dan cinta untuk kuliner bersatu. Kami
+            percaya bahwa
+            makanan adalah lebih dari sekadar kebutuhan, tetapi juga pengalaman yang bisa membawa kebahagiaan dan
+            menciptakan kenangan indah. Menghadirkan makanan berkualitas tinggi yang memuaskan setiap selera. Kami
+            berkomitmen untuk menggunakan bahan-bahan segar dan alami, mengutamakan cita rasa otentik, serta menyajikan
+            setiap hidangan dengan penuh kasih sayang.
+         </div>
+         <div class="img-about">
+            <img src="img/bg-about.jpg" alt="">
+         </div>
+      </div>
+   </section>
+   <!-- About end-->
+
+   <!-- Menu -->
+   <section class="menu" id="menu">
+      <h1 class="heading">Our Menu</h1>
+
+      <!-- Filters Button -->
+      <div class="btn-container">
+         <button type="button" class="filter-btn filter-btn-active" data-id="all">All</button>
+         <button type="button" class="filter-btn" data-id="special">Special</button>
+         <button type="button" class="filter-btn" data-id="recomend">Recomend</button>
+      </div>
+      <!-- Filters Button end-->
+      <!-- items single -->
+      <div class="menu-item">
+
+      </div>
+      <!-- items single end -->
+   </section>
+   <!-- Menu end-->
+
+   <!-- Contact -->
+   <section class="contact" id="contact">
+      <h1 class="heading">Contact</h1>
+      <div class="contact-container">
+         <div class="maps">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56400425202!2d107.56075425156855!3d-6.9034423791984905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1717821228337!5m2!1sid!2sid"
+               width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+         <form action="" class="from" id="form">
+            <input type="text" name="username" id="username" placeholder="username" required>
+            <input type="password" name="password" id="password" placeholder="password" required>
+            <input type="email" name="email" id="email" placeholder="email" required>
+            <textarea name="address" id="address" placeholder="address" required></textarea>
+            <button class="btn send">Send </button>
+         </form>
+      </div>
+   </section>
+   <!-- Contact end -->
+
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="footer-container">
+         <div class="about-brand">
+            <a href="#home">Foods!</a>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio earum dicta laborum autem. Inventore
+               officiis quas fugit repellendus hic qui vero unde maxime incidunt reiciendis laborum, aliquam placeat
+               iure quibusdam
+            </p>
+         </div>
+         <div class="products-container">
+            <h1>Products</h1>
+            <ul>
+               <li><a href="#">Fresh Food</a></li>
+               <li><a href="#">Frozen Food</a></li>
+               <li><a href="#">Beverage</a></li>
+               <li><a href="#">Snack</a></li>
+               <li><a href="#">Healthy food</a></li>
+            </ul>
+         </div>
+         <div class="sosial-media">
+            <h1>Sosial Media</h1>
+            <ul>
+               <li><a href="https://web.telegram.org/">
+                     <i class="fa-brands fa-telegram"></i>
+                  </a></li>
+               <li><a href="https://www.instagram.com/">
+                     <i class="fa-brands fa-instagram"></i>
+                  </a></li>
+               <li><a href="https://www.pinterest.com/">
+                     <i class="fa-brands fa-pinterest"></i>
+                  </a></li>
+            </ul>
+         </div>
+         <div class="contact">
+            <h1>Contact</h1>
+            <ul>
+               <li><i class="fa-solid fa-house"></i>Jl.Bandung No.40 Jawa Barat</li>
+               <li><i class="fa-solid fa-envelope"></i>Foods!@gmail.com</li>
+               <li><i class="fa-solid fa-phone"></i>+6289 123 789</li>
+            </ul>
+         </div>
+      </div>
+
+   </footer>
+   <!-- Copy Right -->
+   <div class="copyright">
+      &#169 2024 Copyright: Foods.com
+   </div>
+   <!-- Footer end-->
+
+
+   <!-- Box confirmasi -->
+   <div class="box-confirmasi" style="z-index: 1;">
+      <div class="text-box">
+         <h5>
+            Pesanan anda akan segera dikirim ke alamat yang akan dituju Mohon ditunggu Terima Kasih
+         </h5>
+         <div class="check-box">
+            <i class="fa-solid fa-check"></i>
+         </div>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
