@@ -478,7 +478,7 @@ nav {
 }
 
 .button-cart {
-   background-color: var(--clr-prmy);
+   background-color: #25a21f;
    padding: .5rem 1rem;
    border-radius: 5px;
    color: var(--clr-white);
